@@ -1,0 +1,15 @@
+{
+  "name": "Sudoku Mansion 简体中文汉化",
+  "patchVersion": "1.2.5-zh-cn.2",
+  "gameVersion": "1.2.5",
+  "updated": "2026-09-16",
+  "steamAppId": 5005590,
+  "expectedJsonReplacementsPerFile": 417,
+  "jsonTranslationKeys": 365,
+  "uiTranslationKeys": 484,
+  "originalHashes": {
+    "frontendJson": "99e12e0975d43535152fb8f6bb7d7d69543f0bf00b3a8a94e87dc3d33f1e7e7c",
+    "backendJson": "c5af1279b19a6e6559dbbc11fd44e887be788dd91908b4fa41c891b21a3b82b2",
+    "index": "d5d322348b399443fddff9c318c11153797f87c003884e2ffc53031ba5f218f5"
+  }
+}
