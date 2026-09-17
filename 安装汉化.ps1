@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$requiredGameVersion = '1.2.5'
+$requiredGameVersion = '1.2.6'
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $patchRoot = Join-Path $scriptRoot 'patch'
 

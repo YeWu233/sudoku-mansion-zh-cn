@@ -1,10 +1,10 @@
 {
   "meta": {
     "name": "Sudoku Mansion 简体中文汉化",
-    "patchVersion": "1.2.5-zh-cn.2",
-    "gameVersion": "1.2.5",
+    "patchVersion": "1.2.6-zh-cn.1",
+    "gameVersion": "1.2.6",
     "language": "zh-CN",
-    "updated": "2026-09-16",
+    "updated": "2026-09-17",
     "format": "sha256-source-to-target",
     "note": "This file contains hashes of original strings and Chinese translations; it does not contain game data files."
   },
@@ -184,6 +184,10 @@
     {
       "hash": "1e549805d71ebeca586d511e44c560fbcf8f752c5c3701d4fb9b3f847b226305",
       "target": "不规则数独"
+    },
+    {
+      "hash": "1f691267008f94430adbf9bf43311cefdf0deb923ef2aafb50c5d765ddbb3f15",
+      "target": "计数十字散布在整座庄园中。\n\n如果还有尚未完成的谜题，请先把它们全部完成，才能得到正确的十字数量并从这里继续前进。"
     },
     {
       "hash": "2016e64738c0c6de537c6c68d9e75bfef561b6307eb2f48bfb10aa96de692bc9",
@@ -520,6 +524,10 @@
     {
       "hash": "5a804dc98224ad9a8c7079469989e8d7b6fc50c83cb3155f430b313f803b8931",
       "target": "解锁新规则有时会在旧格中揭示新的线索。\n\n击败首领后，记得重新仔细检查整道谜题。\n"
+    },
+    {
+      "hash": "5a8d1d7bfc16690f20442097155caaddddb73e031ec8a1f8c959789f3bbfc795",
+      "target": "可以使用手柄绘制线条。\n\n先在右侧栏选中线条图标并按 {A}，进入线条模式；用右摇杆选择颜色。\n\n按下并松开 {A}，可在当前格循环放置 O 和 X。\n先选中相邻格，再按 {A}，可在两格之间放置 X。\n按住 {A}，将左摇杆移动一格后松开，即可在两格之间画线。\n进行上述操作时按住 {RB}/{LB}，会绘制边线而不是中心线。\n这些操作同样支持对角方向。\n\n绘制更长的线条时，操作方式有所不同。\n\n按住 {A} 并划过至少 2 格长的路径，即可一次绘制整条路径（仅限横向或纵向路径）。\n\n按住 {RB}/{LB} 的同时按住 {A}，并选择至少 3 个格，即可绘制所选区域的外边线。"
     },
     {
       "hash": "5a991303f359040dab21f87216ff1fcba38e751057bef1db9171796972f8b413",

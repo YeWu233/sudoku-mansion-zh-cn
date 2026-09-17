@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$requiredGameVersion = '1.2.5'
+$requiredGameVersion = '1.2.6'
 
 function Resolve-GameRoot([string]$RequestedPath) {
   if ($RequestedPath) {
