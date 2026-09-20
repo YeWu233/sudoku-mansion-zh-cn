@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$requiredGameVersion = '1.2.6'
+$requiredGameVersion = '1.2.7'
 
 function Resolve-GameRoot([string]$RequestedPath) {
   if ($RequestedPath) {
@@ -35,6 +35,10 @@ function Resolve-GameRoot([string]$RequestedPath) {
 }
 
 $GameRoot = Resolve-GameRoot $GameRoot
+$gameVersion = (Get-Item -LiteralPath (Join-Path $GameRoot 'Sudoku Mansion.exe')).VersionInfo.FileVersion
+if ($gameVersion -ne $requiredGameVersion -and -not $gameVersion.StartsWith($requiredGameVersion + '.')) {
+  throw "还原程序仅支持游戏 $requiredGameVersion；当前检测到 $gameVersion。请使用对应版本的还原程序。"
+}
 $resourcesRoot = Join-Path $GameRoot 'resources'
 $browserRoot = Join-Path $resourcesRoot 'frontend\dist\browser'
 $backup = Get-ChildItem -LiteralPath $resourcesRoot -Directory -Filter "zh-cn-backup-$requiredGameVersion-*" |

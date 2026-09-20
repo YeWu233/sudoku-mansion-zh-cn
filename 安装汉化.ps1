@@ -4,7 +4,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$requiredGameVersion = '1.2.6'
+$requiredGameVersion = '1.2.7'
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $patchRoot = Join-Path $scriptRoot 'patch'
 
@@ -107,7 +107,7 @@ function Convert-GameJson([string]$Path, [int]$ExpectedCount) {
 $GameRoot = Resolve-GameRoot $GameRoot
 $exePath = Join-Path $GameRoot 'Sudoku Mansion.exe'
 $gameVersion = (Get-Item -LiteralPath $exePath).VersionInfo.FileVersion
-if (-not $gameVersion.StartsWith($requiredGameVersion)) {
+if ($gameVersion -ne $requiredGameVersion -and -not $gameVersion.StartsWith($requiredGameVersion + '.')) {
   throw "补丁仅支持游戏 $requiredGameVersion；当前检测到 $gameVersion。"
 }
 

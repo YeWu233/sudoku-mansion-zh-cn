@@ -1,1 +1,1 @@
-eb9db72b5589f9a51ece08a73233a4123d8b9893dc53f89140ea73900cd48463  Sudoku-Mansion-zh-CN-1.2.6-zh-cn.1.zip
+12aa842ea646071f9a1dfc5a0aefbbf853bd7cad8ba30c2181afda940712a3a0  Sudoku-Mansion-zh-CN-1.2.7-zh-cn.1.zip
